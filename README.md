@@ -1,20 +1,16 @@
 # johncrane-frontend
 John Crane CARLOG Database Frontend
 
-npm start
+`npm start`
 Starts the development server.
 
-npm run build
+`npm run build`
 Bundles the app into static files for production.
 
-npm test
+`npm test`
 Starts the test runner.
-
-npm run eject
-Removes this tool and copies build dependencies, configuration files
-and scripts into the app directory. If you do this, you can’t go back!
 
 ### Begin by typing:
 
-cd johncrane-frontend
-npm start
+`cd johncrane-frontend`
+`npm start`
