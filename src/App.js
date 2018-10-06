@@ -6,6 +6,12 @@ import Dashboard from './pages/Dashboard';
 const style = {
   app: {
     textAlign: 'center'
+  },
+  navbar: {
+    backgroundColor: '#282c34',
+  },
+  link: {
+      color: '#61dafb'
   }
 }
 
@@ -14,8 +20,10 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div style={style.app}>
-          <NavLink to='home'>Home</NavLink>
-          <NavLink to='dashboard'>Dashboard</NavLink>
+          <div style={style.navbar}>
+            <NavLink to='home' style={style.link}>Home</NavLink>&nbsp;
+            <NavLink to='dashboard' style={style.link}>Dashboard</NavLink>
+          </div>
           <Switch>
             <Route path='/home' component={Home} />
             <Route path='/dashboard' component={Dashboard} />

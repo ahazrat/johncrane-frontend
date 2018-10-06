@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 import logo from '../svg/logo.svg'
 import '../css/logo-animation.css'
 
@@ -26,10 +27,14 @@ class Home extends Component {
     render() {
         return (
             <header style={style.header}>
-                <h1>John Crane</h1>
+                <NavLink to='home' style={style.link}>
+                    <h1>John Crane</h1>
+                </NavLink>
                 <img src={logo} style={style.logo} alt="logo" />
                 <p>Interact with the <code>CARLOG</code> database</p>
-                <a href="#dashboard" style={style.link}>Get Started</a>
+                <NavLink to='dashboard' style={style.link}>
+                    Get Started
+                </NavLink>
             </header>
         )
     }
