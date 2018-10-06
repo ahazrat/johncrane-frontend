@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Switch, NavLink } from 'react-router-dom'
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 
@@ -14,8 +14,12 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div style={style.app}>
-          <Route path='/home' component={Home} />
-          <Route path='/dashboard' component={Dashboard} />
+          <NavLink to='home'>Home</NavLink>
+          <NavLink to='dashboard'>Dashboard</NavLink>
+          <Switch>
+            <Route path='/home' component={Home} />
+            <Route path='/dashboard' component={Dashboard} />
+          </Switch>
         </div>
       </BrowserRouter>
     )
