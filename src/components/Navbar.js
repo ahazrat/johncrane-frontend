@@ -132,8 +132,6 @@ class Navbar extends React.Component {
 
 Navbar.propTypes = {
     classes: PropTypes.object.isRequired,
-    page: PropTypes.string.isRequired,
-    setPage: PropTypes.func.isRequired,
 }
 
 export default withStyles(styles)(Navbar)

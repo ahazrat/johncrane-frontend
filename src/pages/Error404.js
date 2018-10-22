@@ -8,21 +8,21 @@ const styles = {
     },
 }
 
-class NCR extends React.Component {
+class Error404 extends React.Component {
     state = {
     }
     render() {
         const { classes } = this.props
         return (
             <div className={classes.root}>
-                NCR
+                Error404
             </div>
         )
     }
 }
 
-NCR.propTypes = {
+Error404.propTypes = {
     classes: PropTypes.object.isRequired,
 }
 
-export default withStyles(styles)(NCR)
+export default withStyles(styles)(Error404)

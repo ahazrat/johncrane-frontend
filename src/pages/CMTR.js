@@ -15,7 +15,7 @@ class CMTR extends React.Component {
         const { classes } = this.props
         return (
             <div className={classes.root}>
-                jello world
+                CMTR
             </div>
         )
     }
